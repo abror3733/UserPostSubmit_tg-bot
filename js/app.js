@@ -82,7 +82,7 @@ function submitUser(id){
             let message =`<b>Order Site:</b>`
             message +=` <b> ID: ${id}</b>`
             message +=` <b> User Name: ${e.target.userName.value}</b>`
-            message +=` <b> User Phone: ${e.target.userPhone.value}</b>`
+            message +=` <b> User Phone: ${e.target.userPhone.value.split(" ")[0]}</b>`
         console.log(message);
 
             axios.post(URL,{
